@@ -7,7 +7,13 @@
 
 import UIKit
 
+import SwiftKeychainWrapper
+
 class FeedViewController: UIViewController {
+    
+    
+    @IBOutlet weak var userFullNameLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +21,35 @@ class FeedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    
+    
+    //LOGOUT
+    @IBAction func signoutButtonTapped(_ sender: Any) {
+        print("Signout Button Tapped")
+        KeychainWrapper.standard.removeObject(forKey: "accessToken")
+        KeychainWrapper.standard.removeObject(forKey: "userID")
+        
+        
+        //self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        
+        let loginViewController =
+        self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        self.present(loginViewController, animated: true)
     }
-    */
-
+    
+    
+    //PROFILE
+    @IBAction func profileButtonTapped(_ sender: Any) {
+        print("Profile Button Tapped")
+    }
+    
+    
+    
+    
+    
+ //END FeedViewController
 }
