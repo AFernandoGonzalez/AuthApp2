@@ -22,6 +22,29 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
+    //Returning User
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+        let accessTokenn: String? = KeychainWrapper.standard.string(forKey: "accessToken")
+
+        if accessTokenn != nil
+        {
+
+            print("_________accessToken_________")
+            print(accessTokenn!)
+            print("_____________________________")
+            //
+            //self.performSegue(withIdentifier: "myFeedSegue", sender: nil)
+            let feedViewController =
+            self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+
+            self.present(feedViewController, animated: true)
+        }
+    }
 
     
     //Returning User
@@ -41,6 +64,7 @@ class LoginViewController: UIViewController {
 //        }
 //    }
 
+    
     
     
     
@@ -163,11 +187,19 @@ class LoginViewController: UIViewController {
                     //if everything is ok we take the user to the authenticated page
                   
                     DispatchQueue.main.async {
-                    let feedBtnViewController =
-                    self.storyboard?.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
-                    
-                    self.present(feedBtnViewController, animated: true)
+//                    let feedBtnViewController =
+//                    self.storyboard?.instantiateViewController(withIdentifier: "FeedViewController") as! FeedViewController
+//
+//                    self.present(feedBtnViewController, animated: true)
                         
+                        let myTabBar =
+                        self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+                        
+                        self.present(myTabBar, animated: true)
+                        
+                        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                        
+                        appDelegate.window?.rootViewController = myTabBar
                         
                         //print("Im in the feed 2")
                     }

@@ -26,17 +26,21 @@ class FeedViewController: UIViewController {
     
     
     
+    
+    
     //LOGOUT
     @IBAction func signoutButtonTapped(_ sender: Any) {
         print("Signout Button Tapped")
         KeychainWrapper.standard.removeObject(forKey: "accessToken")
         KeychainWrapper.standard.removeObject(forKey: "userID")
         
+       
+        
         
         //self.performSegue(withIdentifier: "loginSegue", sender: nil)
         
         let loginViewController =
-        self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         
         self.present(loginViewController, animated: true)
     }

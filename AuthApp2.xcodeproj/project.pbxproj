@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102B182C271737D600463C90 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B182B271737D600463C90 /* MainTabBarController.swift */; };
+		102B182E2717536700463C90 /* RecepiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B182D2717536700463C90 /* RecepiesViewController.swift */; };
+		102B1830271753C500463C90 /* DetailRecepieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B182F271753C500463C90 /* DetailRecepieViewController.swift */; };
+		102B1832271789FF00463C90 /* MealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B1831271789FF00463C90 /* MealsCell.swift */; };
+		102B18342717A35A00463C90 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B18332717A35A00463C90 /* AddMealViewController.swift */; };
 		10B1876B2713C2F3005DF94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B1876A2713C2F3005DF94A /* AppDelegate.swift */; };
 		10B1876D2713C2F3005DF94A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B1876C2713C2F3005DF94A /* SceneDelegate.swift */; };
 		10B1876F2713C2F3005DF94A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B1876E2713C2F3005DF94A /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102B182B271737D600463C90 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		102B182D2717536700463C90 /* RecepiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepiesViewController.swift; sourceTree = "<group>"; };
+		102B182F271753C500463C90 /* DetailRecepieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecepieViewController.swift; sourceTree = "<group>"; };
+		102B1831271789FF00463C90 /* MealsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCell.swift; sourceTree = "<group>"; };
+		102B18332717A35A00463C90 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		10B187672713C2F3005DF94A /* AuthApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B1876A2713C2F3005DF94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B1876C2713C2F3005DF94A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,11 @@
 				10B1877E2713C336005DF94A /* LoginViewController.swift */,
 				10B187802713C343005DF94A /* FeedViewController.swift */,
 				10B187822713C355005DF94A /* SignUpViewController.swift */,
+				102B182B271737D600463C90 /* MainTabBarController.swift */,
+				102B182D2717536700463C90 /* RecepiesViewController.swift */,
+				102B182F271753C500463C90 /* DetailRecepieViewController.swift */,
+				102B1831271789FF00463C90 /* MealsCell.swift */,
+				102B18332717A35A00463C90 /* AddMealViewController.swift */,
 			);
 			path = AuthApp2;
 			sourceTree = "<group>";
@@ -89,7 +104,6 @@
 				3504C53BB2B8D12D7C69D011 /* Pods-AuthApp2.debug.xcconfig */,
 				147E3B533C79CF776FDE7827 /* Pods-AuthApp2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,9 +232,14 @@
 			files = (
 				10B187832713C355005DF94A /* SignUpViewController.swift in Sources */,
 				10B1877F2713C336005DF94A /* LoginViewController.swift in Sources */,
+				102B182C271737D600463C90 /* MainTabBarController.swift in Sources */,
+				102B18342717A35A00463C90 /* AddMealViewController.swift in Sources */,
 				10B1876F2713C2F3005DF94A /* ViewController.swift in Sources */,
 				10B187812713C343005DF94A /* FeedViewController.swift in Sources */,
 				10B1876B2713C2F3005DF94A /* AppDelegate.swift in Sources */,
+				102B1832271789FF00463C90 /* MealsCell.swift in Sources */,
+				102B182E2717536700463C90 /* RecepiesViewController.swift in Sources */,
+				102B1830271753C500463C90 /* DetailRecepieViewController.swift in Sources */,
 				10B1876D2713C2F3005DF94A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
